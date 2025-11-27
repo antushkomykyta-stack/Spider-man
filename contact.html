@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти та Форми | Spider-Man Project</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+<body>
+
+    <header>
+        <h1>ЛЮДИНА-ПАВУК</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">СЮЖЕТ</a></li>
+                <li><a href="index.html">ЗНІМАЛЬНА ГРУПА</a></li>
+                <li><a href="index.html">ФОТО</a></li>
+                <li><a href="index.html">НАГОРОДИ</a></li>
+                <li><a href="contact.html">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-nav">
+        <ul>
+            <li><a href="#registration-form">Форма реєстрації</a></li>
+            <li><a href="#login-form">Форма входу</a></li>
+            <li><a href="#feedback-form">Форма зворотного зв'язку</a></li>
+        </ul>
+    </div>
+
+    <div class="social-links-fixed">
+        <p>Посилання на соц. мережі:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/SpiderManMovie"><img src="images/2.jpg" alt="Facebook"></a>
+            <a href="https://www.twitter.com/SpiderManMovie"><img src="images/3.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/SpiderManMovie"><img src="images/4.jpg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/SpiderMan"><img src="images/5.jpg" alt="YouTube"></a>
+        </div>
+    </div>
+
+    <main>
+        
+        <section id="general-info">
+            <h2>Людина-Павук</h2>
+            
+            <div class="info-content-container">
+                
+                <div class="text-float-block">
+                    <img class="float-img left-float" src="images/1.jpg" alt="Зображення, яке обтікає текст">
+                    <p>"Люди́на-Паву́к" (або "Спа́йдермен", англ. "Spider-Man") — це вигаданий супергерой із коміксів американського видавництва "Marvel Comics". Його справжнє ім'я — Пітер Бенджамін Паркер. Персонаж був створений сценаристом Стеном Лі та художником Стівом Дітко.</p>
+
+                    <img class="float-img right-float" src="images/2.jpg" alt="Зображення, яке обтікає текст">
+                    <p>Вперше Людина-Павук з'явився у серії коміксів "Amazing Fantasy № 15" у серпні 1962 року. На відміну від багатьох попередніх підлітків-героїв, він діяв самостійно. За сюжетом, розумний старшокласник із Нью-Йорка, Пітер Паркер, отримав надздібності після укусу радіоактивного павука.</p>
+                    
+                    <div style="clear: both;"></div> 
+
+                    <img class="float-img" src="images/3.jpg" alt="Зображення, яке не обтікає текст">
+                    <p>Серед його здібностей — надзвичайна сила, швидкість, спритність, можливість чіплятися до поверхонь (липкі пальці) та унікальне павуче чуття, що попереджає про небезпеку. Його основний принцип сформульовано у фразі: "З великою силою приходить велика відповідальність". Сьогодні Людина-Павук є одним із найпопулярніших та комерційно успішних супергероїв у світі, з'являючись у коміксах, фільмах, відеоіграх та анімації.</p>
+                </div>
+
+                <div class="absolute-position-block">
+                    
+                    <div class="position-wrapper">
+                        <img src="images/4.jpg" alt="Маска Людини-Павука" class="overlap-image red-box">
+                        <img src="images/5.jpg" alt="Логотип Людини-Павука" class="overlap-image blue-box">
+                        <img src="images/6.jpg" alt="Павутина" class="overlap-image orange-box">
+                    </div>
+                    
+                    </div>
+            </div>
+        </section>
+
+        <section id="registration-form">
+            <h2>Форма реєстрації</h2>
+            <form action="#" method="post" class="form-registration">
+                <fieldset>
+                    <legend>Реєстраційні дані</legend>
+                    
+                    <div class="form-row">
+                        <div class="form-column">
+                            
+                            <img src="images/1.jpg" alt="Аватар користувача" class="profile-image-placeholder">
+
+                            <div class="form-field">
+                                <label for="reg_name">Ім'я:</label>
+                                <input type="text" id="reg_name" name="name" placeholder="Ім'я" required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="reg_surname">Прізвище:</label>
+                                <input type="text" id="reg_surname" name="surname" placeholder="Прізвище" required>
+                            </div>
+                            
+                            <div class="form-field">
+                                <span>Стать:</span>
+                                <div>
+                                    <input type="radio" id="male" name="gender" value="Чоловіча">
+                                    <label for="male">Чоловіча</label>
+                                    <input type="radio" id="female" name="gender" value="Жіноча">
+                                    <label for="female">Жіноча</label>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="reg_age">Вік:</label>
+                                <input type="number" id="reg_age" name="age" min="1" max="99" value="21">
+                            </div>
+
+                            </div>
+                        
+                        <div class="form-column">
+
+                            <div class="form-field">
+                                <label for="reg_country">Країна проживання:</label>
+                                <select id="reg_country" name="country" required>
+                                    <option value="">Оберіть країну проживання</option>
+                                    <option value="UA">Україна</option>
+                                    <option value="PL">Польща</option>
+                                    <option value="US">США</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="reg_phone">Номер телефону:</label>
+                                <input type="tel" id="reg_phone" name="phone" pattern="\+38\(0[0-9]{2}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+38(0XX)XXX-XX-XX">
+                            </div>
+                            
+                            <div class="form-field">
+                                <label for="reg_social">Соцмережа:</label>
+                                <input type="url" id="reg_social" name="social" placeholder="Посилання на соцмережу">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="reg_email">Електронна пошта:</label>
+                                <input type="email" id="reg_email" name="email" placeholder="Ел. пошта" required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="reg_password">Пароль:</label>
+                                <input type="password" id="reg_password" name="password" placeholder="Пароль" required>
+                            </div>
+                            
+                            <div class="form-field">
+                                <input type="checkbox" id="reg_agree" name="agree" required>
+                                <label for="reg_agree">Чи згодні Ви з умовами?</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row registration-buttons">
+                        <button type="submit">Зареєструватися</button>
+                        <button type="reset">Відміна</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="login-form">
+            <h2>Форма входу</h2>
+            <form action="#" method="post" class="form-login">
+                <fieldset>
+                    <legend>Вхід</legend>
+                    
+                    <div class="form-field">
+                        <label for="login_name">Логін:</label>
+                        <input type="text" id="login_name" name="login" placeholder="Логін" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="login_password">Пароль:</label>
+                        <input type="password" id="login_password" name="password" placeholder="Пароль" required>
+                    </div>
+
+                    <div class="form-row registration-buttons">
+                        <button type="submit">Вхід</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="feedback-form">
+            <h2>Форма зворотного зв'язку</h2>
+            <form action="#" method="post" class="form-feedback">
+                <fieldset>
+                    <legend>Повідомлення</legend>
+                    
+                    <div class="form-row">
+                        <div class="form-column feedback-left">
+                            <div class="form-field">
+                                <label for="fb_name">Ім'я:</label>
+                                <input type="text" id="fb_name" name="name" placeholder="Ім'я">
+                            </div>
+                            
+                            <div class="form-field">
+                                <label for="fb_email">Ел. пошта:</label>
+                                <input type="email" id="fb_email" name="email" placeholder="Ел. пошта" required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="fb_topic">Тема повідомлення:</label>
+                                <select id="fb_topic" name="topic">
+                                    <option value="general">Загальне питання</option>
+                                    <option value="tech">Технічна підтримка</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-column feedback-right">
+                            <div class="form-field">
+                                <label for="fb_message">Повідомлення:</label>
+                                <textarea id="fb_message" name="message" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row registration-buttons">
+                        <button type="submit">Відправити</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        Copyright &copy; 2025 | mob. 096-328-77-48 | email: <a href="mailto:Mykyta@gmail.com">Mykyta@gmail.com</a> | skype: Mykyta1234567890
+
+</body>
+</html>
