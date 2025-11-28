@@ -43,7 +43,7 @@ h1 {
     font-size: 2.8rem;
     text-transform: uppercase;
     letter-spacing: 6px;
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.9);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
     margin: 0;
 }
 
@@ -130,7 +130,7 @@ ul li {
 }
 
 .info-content-container {
-    display: flex;
+    display: flex; /* Flexbox (Місце 1) - Контейнер загальної інформації */
     gap: 20px;
 }
 
@@ -215,14 +215,16 @@ ul li {
     border-color: #ffc107; 
 }
 
-.photo-gallery {
-    display: flex;
-    justify-content: space-around;
+/* Використовуємо CSS Grid для галереї */
+.photo-gallery-grid {
+    display: grid; /* CSS Grid (Місце 1) */
+    /* Три рівні колонки */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 25px;
 }
 
 #photo figure {
-    flex: 1; 
+    /* В Grid-контейнері flex: 1 вже не потрібен */
     padding: 0;
     margin: 0;
     text-align: center;
@@ -335,7 +337,7 @@ legend {
 }
 
 .form-row {
-    display: flex;
+    display: flex; /* Flexbox (Місце 2) - Рядки форми */
     flex-wrap: wrap; 
     gap: 20px;
 }
@@ -448,6 +450,22 @@ footer a {
     text-decoration: none;
 }
 
+/* === Медіазапити (3 рази) === */
+
+/* 1. Медіазапит для великих планшетів/невеликих десктопів (Додано) */
+@media (max-width: 1200px) {
+    main {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    /* Grid: Галерея переходить на 2 колонки */
+    .photo-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 2. Медіазапит для планшетів (Вже був) */
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -467,8 +485,9 @@ footer a {
         margin-top: 20px;
     }
 
-    .photo-gallery {
-        flex-direction: column;
+    /* Grid: Галерея переходить на 1 колонку */
+    .photo-gallery-grid {
+        grid-template-columns: 1fr;
         gap: 15px;
     }
 
@@ -494,6 +513,7 @@ footer a {
     }
 }
 
+/* 3. Медіазапит для мобільних телефонів (Вже був) */
 @media (max-width: 480px) {
     h1 {
         font-size: 2rem;
