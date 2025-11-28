@@ -130,7 +130,7 @@ ul li {
 }
 
 .info-content-container {
-    display: flex; /* Flexbox (Місце 1) - Контейнер загальної інформації */
+    display: flex;
     gap: 20px;
 }
 
@@ -215,16 +215,13 @@ ul li {
     border-color: #ffc107; 
 }
 
-/* Використовуємо CSS Grid для галереї */
 .photo-gallery-grid {
-    display: grid; /* CSS Grid (Місце 1) */
-    /* Три рівні колонки */
+    display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 25px;
 }
 
 #photo figure {
-    /* В Grid-контейнері flex: 1 вже не потрібен */
     padding: 0;
     margin: 0;
     text-align: center;
@@ -337,7 +334,7 @@ legend {
 }
 
 .form-row {
-    display: flex; /* Flexbox (Місце 2) - Рядки форми */
+    display: flex;
     flex-wrap: wrap; 
     gap: 20px;
 }
@@ -450,22 +447,17 @@ footer a {
     text-decoration: none;
 }
 
-/* === Медіазапити (3 рази) === */
-
-/* 1. Медіазапит для великих планшетів/невеликих десктопів (Додано) */
 @media (max-width: 1200px) {
     main {
         margin: 20px;
         padding: 20px;
     }
     
-    /* Grid: Галерея переходить на 2 колонки */
     .photo-gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* 2. Медіазапит для планшетів (Вже був) */
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -485,7 +477,6 @@ footer a {
         margin-top: 20px;
     }
 
-    /* Grid: Галерея переходить на 1 колонку */
     .photo-gallery-grid {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -513,7 +504,6 @@ footer a {
     }
 }
 
-/* 3. Медіазапит для мобільних телефонів (Вже був) */
 @media (max-width: 480px) {
     h1 {
         font-size: 2rem;
