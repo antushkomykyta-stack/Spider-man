@@ -448,9 +448,6 @@ footer a {
     text-decoration: none;
 }
 
-/* ----------------- Медіа запити ----------------- */
-
-/* Планшети та маленькі екрани до 768px */
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -497,7 +494,6 @@ footer a {
     }
 }
 
-/* Дуже маленькі екрани до 480px */
 @media (max-width: 480px) {
     h1 {
         font-size: 2rem;
